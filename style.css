@@ -25,7 +25,8 @@ body {
   height: 600px;
   width: 300px;
   background-color: #ccefff;
-  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+  box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 .layer-1 {
@@ -107,7 +108,6 @@ body {
 .layer-8 {
   position: absolute;
   z-index: 8;
-  background-color: papayawhip;
   bottom: 0;
   width: 200px;
   height: 120px;
@@ -119,7 +119,6 @@ body {
 .layer-9 {
   position: absolute;
   z-index: 9;
-  background-color: white;
   bottom: 0;
   width: 120px;
   height: 100px;
@@ -128,7 +127,6 @@ body {
 .layer-10 {
   position: absolute;
   z-index: 10;
-  background-color: pink;
   bottom: 0;
   right: 0;
   height: 100px;
@@ -217,4 +215,81 @@ body {
   background-size: 33px 30px;
   height: 30px;
   width: 100%;
+}
+
+/* arbusto */
+.layer-8__left-lawn {
+  background-color: var(--dark-green);
+  border-radius: 40px 40px 0 0;
+  bottom: 0;
+  display: inline-block;
+  height: 70%;
+  left: 0;
+  position: absolute;
+  width: 80px;
+}
+
+.layer-8__center-lawn {
+  background-color: var(--dark-green);
+  border-radius: 40px 40px 0 0;
+  bottom: 0;
+  display: inline-block;
+  height: 100%;
+  left: 60px;
+  position: absolute;
+  width: 80px;
+}
+
+.layer-8__right-lawn {
+  background-color: var(--dark-green);
+  border-radius: 40px 40px 0 0;
+  bottom: 0;
+  display: inline-block;
+  height: 80%;
+  left: 130px;
+  position: absolute;
+  width: 80px;
+}
+
+/* nubes */
+.layer-9__left-cloud {
+  background-color: white;
+  border-radius: 40px 40px 0 0;
+  display: inline-block;
+  height: 100%;
+  width: 80px;
+  left: 0;
+  position: absolute;
+}
+
+.layer-9__right-cloud {
+  background-color: white;
+  border-radius: 0 40px 30px 0;
+  bottom: 0;
+  display: inline-block;
+  height: 60%;
+  width: 40px;
+  left: 80px;
+  position: absolute;
+}
+
+.layer-10__left-cloud {
+  background-color: white;
+  border-radius: 40px 0 0 30px;
+  display: inline-block;
+  bottom: 0;
+  height: 60%;
+  width: 40px;
+  right: 80px;
+  position: absolute;
+}
+
+.layer-10__right-cloud {
+  background-color: white;
+  border-radius: 40px 40px 0 0;
+  display: inline-block;
+  height: 100%;
+  width: 80px;
+  right: 0;
+  position: absolute;
 }
