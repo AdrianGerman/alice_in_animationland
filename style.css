@@ -36,6 +36,32 @@ body {
   width: 80px;
   bottom: 0;
   right: 60px;
+
+  animation-name: layer;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+@keyframes layer {
+  0% {
+    bottom: 0px;
+  }
+  25% {
+    bottom: -80px;
+  }
+  100% {
+    bottom: 0px;
+  }
+}
+
+.layer-1 input[type="checkbox"] {
+  position: absolute;
+  appearance: none;
+  cursor: pointer;
+  z-index: 1;
+  width: 100%;
+  height: 80px;
 }
 
 .layer-2 {
@@ -45,6 +71,10 @@ body {
   width: 80px;
   bottom: 0;
   left: 60px;
+  animation-name: layer;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .layer-3 {
@@ -69,6 +99,10 @@ body {
   width: 80px;
   height: 350px;
   left: 15px;
+  animation-name: layer;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .layer-5 {
@@ -90,6 +124,10 @@ body {
   right: 30px;
   height: 250px;
   width: 80px;
+  animation-name: layer;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .layer-7 {
