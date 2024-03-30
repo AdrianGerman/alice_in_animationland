@@ -30,6 +30,24 @@ body {
   overflow: hidden;
 }
 
+.title {
+  display: flex;
+  justify-content: center;
+  margin: 45px 0 10px;
+}
+
+.title img {
+  width: 60%;
+}
+
+.score {
+  color: var(--dark-brown);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  margin: 0;
+  text-align: center;
+}
+
 .layer-1 {
   position: absolute;
   z-index: 1;
